@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pizza">
+    <h1 id="title">Best Pizza</h1>
+    <p id="description" class="mainParagraph">What is your ideal pizza?</p>
+    <form id="survey-form">
+      <hr/>
+
+      <div class="form-group">
+        <label id="name-label">Name</label>
+        <input id="name" required type="text" placeholder="Enter your name..."></input>
+      </div>
+      <div class="form-group">
+        <label id="email-label">E-mail adrress</label>
+        <input id="email" required type="email" placeholder="Enter your e-mail"></input>
+      </div>
+      <div class="form-group">
+        <label id="number-label">Age</label>
+        <input id="number" type="number" min="10" max="100" placeholder="Enter your age..."></input>
+      </div>
+
+      <hr/>
+      <div class="form-group">
+        <p>Do you often eat pizza?</p>
+        <label><input name="classic" value="Yes" type="radio" class="input-radio" checked> Yes</label>
+        <label"><input name="classic" value="No" type="radio" class="input-radio"> No</label>
+      </div>
+
+      <hr/>
+      <div class="form-group">
+        <p>Witch kind of pizza do you prefer?</p>
+        <select id="dropdown" class="pizzaType">
+          <option disabled selected value class="pizzaType">Select an option</option>
+          <option value="classic" class="pizzaType">Classic</option>
+          <option value="calzone" class="pizzaType">Calzone</option>
+        </select>
+      </div>
+
+      <hr/>
+      <div class="form-group">
+        <p>What is your favorite pizzas?</p>
+        <label><input value="capricosa" name="favorite" type="checkbox" class="pizzaType">Capricosa</label>
+        <label><input value="cheesePizza" name="favorite" type="checkbox" class="pizzaType">Cheese Pizza</label>
+        <label><input value="vegiePizza" name="favorite" type="checkbox" class="pizzaType">Veggie Pizza</label>
+        <label><input value="pepperoniPizza" name="favorite" type="checkbox" class="pizzaType">Pepperoni Pizza</label>
+        <label><input value="meatPizza" name="favorite" type="checkbox" class="pizzaType">Meat Pizza</label>
+        <label><input value="margheritaPizza" name="favorite" type="checkbox" class="pizzaType">Margherita Pizza</label>
+        <label><input value="bbqChickenPizza" name="favorite" type="checkbox" class="pizzaType">BBQ Chicken Pizza</label>
+        <label><input value="hawaiianPizza" name="favorite" type="checkbox" class="pizzaType">Hawaiian Pizza</label>
+      </div>
+
+      <hr/>
+      <div class="form-group">
+        <p>If you have some other kind of pizza that you would like to share with us, please write it!</p>
+        <textarea id="comments" class="comment" placeholder="Please enter your suggestion here..." style="height: 150px;"></textarea>
+      </div>
+
+      <hr/>
+      <div class="form-group">
+        <button id="submit" type="submit" class="submitButton">Submit</button>
+      </div>
+    </form>
+    </div>
+  </body>
+  
+<html>
